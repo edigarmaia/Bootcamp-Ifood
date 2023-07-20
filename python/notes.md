@@ -105,3 +105,7 @@ Precedencia dos operadores
 . >= maior ou igual
 < menor
 <= menor ou igual
+
+## Operadores de atribuição
+= atribuição
++= atribuição com adicao
