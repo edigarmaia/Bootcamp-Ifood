@@ -109,3 +109,8 @@ Precedencia dos operadores
 ## Operadores de atribuição
 = atribuição
 += atribuição com adicao
+
+## Operadores lógicos
+and - V se as duas condições são V
+or - V se ao menos uma condição for V
+not - retorna Falso se o resultado for verdadeiro
