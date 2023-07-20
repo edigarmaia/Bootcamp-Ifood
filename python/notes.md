@@ -117,3 +117,6 @@ not - retorna Falso se o resultado for verdadeiro
 ## Operadores de identidade
 is - compara se dois obejtos ocupam a mesma região de memória
 is not - compara se dois obejtos não ocupam a mesma região de memória
+
+## Operadores de associação
+Verifica se um objeto está presente em uma sequencia
