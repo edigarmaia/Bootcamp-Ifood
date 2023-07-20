@@ -70,4 +70,9 @@ Padrão de nomes em snakeCase
 Escolher nomes sugestivos
 Nome de constante todo em maiusculo
 
+----------------------------------------------------------------
+Função entrada
+input - lê como string
 
+Função saída
+print
