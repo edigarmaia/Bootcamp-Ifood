@@ -54,15 +54,17 @@ dir(100)
 help() -> sistema de ajuda integrado, é possível fazer buscas em modo interativo ou informar por parametro qual o nome do módulo, função, classe, método ou variavel.
 help(100)
 
-----------------------------------------------------------------
-Variaveis 
+---
+
+Variaveis
 Não precisamos definir o tipo da variavel, o python identifica automaticamente.
 
 Constantes
 Uma constante nasce com um valor e permanece com ele até o final do programa.
 Em python não temos constantes, para usar uma variavel como constante devemos criar com o nome todo em letras maiusculas
 
-----------------------------------------------------------------
+---
+
 Boas práticas
 Padrão de nomes em snakeCase
 Escolher nomes sugestivos
