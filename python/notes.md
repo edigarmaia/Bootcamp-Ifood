@@ -97,3 +97,11 @@ Precedencia dos operadores
 2º Expoentes
 3º Multiplicação e divisão, da esquerda para a direita
 4º Somas e subtrações, da esquerda para a direita
+
+## Operadores de comparação
+== igual
+!= diferente
+. > maior
+. >= maior ou igual
+< menor
+<= menor ou igual
