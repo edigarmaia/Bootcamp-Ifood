@@ -1,5 +1,7 @@
 # Python
+
 Nasceu em 1989 como um hobby, do programador Guido Van Rossum, a ideia era dar continuidade a linguagem ABC, que era desenvolvida no Centro de Pesquisa Holandês (CWI).
+
 - fácil e intuitiva
 - código aberto, para que todos possam contribuir
 - código tão inteligível quanto inglês
@@ -12,7 +14,42 @@ Em 2008 nasce a versão 3.0 que resolveu problemas de design da linguagem e melh
 Versão atual 3.10.2
 
 Linguagem muito versátil
+
 - tipagem dinâmica e forte
 - multiplataforma e multiparadigma
 - comunidade gigante e ativa
 - curva de aprendizado baixa
+
+---
+
+## Tipos de dados
+
+Definem as caracteristicas e comportamentos de um valor (objeto) para o interpretador e quanto de espaço vai ocupar na memoria
+
+texto -> str
+numerico -> int, float, complex
+sequencia -> list, tuple, range
+mapa -> dict
+colecao -> set, fronzenset
+booleano -> bool
+binario -> bytes, bytearray, memoryview
+
+---
+
+int -> numeros inteiros
+float -> numeros com pontos flutuantes
+bool -> True or False
+str -> valores alfanuméricos
+
+---
+
+Modo interativo, escrever o codigo e já ver em tempo real
+Para entrar: digite no terminal, python ou python3 e enter
+Para sair: exit()
+
+Funcões
+dir() -> retorna a lista de nomes no escopo local atual
+dir(100)
+
+help() -> sistema de ajuda integrado, é possível fazer buscas em modo interativo ou informar por parametro qual o nome do módulo, função, classe, método ou variavel.
+help(100)
