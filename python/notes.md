@@ -114,3 +114,6 @@ Precedencia dos operadores
 and - V se as duas condições são V
 or - V se ao menos uma condição for V
 not - retorna Falso se o resultado for verdadeiro
+## Operadores de identidade
+is - compara se dois obejtos ocupam a mesma região de memória
+is not - compara se dois obejtos não ocupam a mesma região de memória
