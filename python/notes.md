@@ -70,9 +70,30 @@ Padrão de nomes em snakeCase
 Escolher nomes sugestivos
 Nome de constante todo em maiusculo
 
-----------------------------------------------------------------
+---
+
 Função entrada
 input - lê como string
 
 Função saída
 print
+
+---
+
+## Operadores aritméticos
+
+- soma
+
+* subtração
+
+- multiplicação
+  / divisão - retorna um float
+  // divisão inteira - retorna um inteiro
+  % mod - resto da divisão
+  \*\* exponenciação
+
+Precedencia dos operadores
+1º Parentêsis
+2º Expoentes
+3º Multiplicação e divisão, da esquerda para a direita
+4º Somas e subtrações, da esquerda para a direita
