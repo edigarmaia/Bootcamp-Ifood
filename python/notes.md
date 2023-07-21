@@ -99,6 +99,7 @@ Precedencia dos operadores
 4º Somas e subtrações, da esquerda para a direita
 
 ## Operadores de comparação
+
 == igual
 != diferente
 . > maior
@@ -107,16 +108,29 @@ Precedencia dos operadores
 <= menor ou igual
 
 ## Operadores de atribuição
+
 = atribuição
 += atribuição com adicao
 
 ## Operadores lógicos
+
 and - V se as duas condições são V
 or - V se ao menos uma condição for V
 not - retorna Falso se o resultado for verdadeiro
+
 ## Operadores de identidade
+
 is - compara se dois obejtos ocupam a mesma região de memória
 is not - compara se dois obejtos não ocupam a mesma região de memória
 
 ## Operadores de associação
+
 Verifica se um objeto está presente em uma sequencia
+in - not in
+
+## Indentação e blocos
+
+Identar é uma forma de manter o código mais legível e mais manutenível
+Atraves da indentação o interpretador consegue determinar onde um bloco inicia e onde termina
+
+Por convenção a cada nova linha utiliza quatro espaços para identar e definir os blocos
