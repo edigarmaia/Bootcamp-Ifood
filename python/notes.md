@@ -144,3 +144,5 @@ Repete um determinado código por um numero de vezes, esse numero pode ser conhe
 * For - mais indicado quando sabemos o número exato de vezes que o bloco de código deve ser executado ou quando queremos percorrer um objeto iterável.
 
 * While - faz sentido usar quando nao sabemos o número exato de vezes que o bloco de código deve ser executado.
+
+## Strings e fatiamento
