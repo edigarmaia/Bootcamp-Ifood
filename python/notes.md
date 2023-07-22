@@ -153,3 +153,6 @@ Repete um determinado código por um numero de vezes, esse numero pode ser conhe
 
 F-String
 print(f"valor de PI: {PI:.2f}")# definindo duas casas decimais
+
+### Fatiamento de strings
+Técnica usada para retornar substrings (partes da string original), informando start, stop e step.
