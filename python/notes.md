@@ -156,3 +156,6 @@ print(f"valor de PI: {PI:.2f}")# definindo duas casas decimais
 
 ### Fatiamento de strings
 Técnica usada para retornar substrings (partes da string original), informando start, stop e step.
+
+### String multiplas linhas
+São definidas informando 3 aspas simples ou duplas durante a atribuição, podem ocupar várias linhas do código e todos os espaços em branco são incluídos na string final.
