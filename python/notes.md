@@ -134,3 +134,7 @@ Identar é uma forma de manter o código mais legível e mais manutenível
 Atraves da indentação o interpretador consegue determinar onde um bloco inicia e onde termina
 
 Por convenção a cada nova linha utiliza quatro espaços para identar e definir os blocos
+
+## Estruturas condicionais
+Permitem o desvio do fluxo de controle, quando determinadas expressões lógicas são atendidas
+
