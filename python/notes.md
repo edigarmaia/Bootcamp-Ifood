@@ -136,13 +136,20 @@ Atraves da indentação o interpretador consegue determinar onde um bloco inicia
 Por convenção a cada nova linha utiliza quatro espaços para identar e definir os blocos
 
 ## Estruturas condicionais
+
 Permitem o desvio do fluxo de controle, quando determinadas expressões lógicas são atendidas
 
 ## Estruturas de repeticao
+
 Repete um determinado código por um numero de vezes, esse numero pode ser conhecido ou determinado atraves de uma expressao logica
 
-* For - mais indicado quando sabemos o número exato de vezes que o bloco de código deve ser executado ou quando queremos percorrer um objeto iterável.
+- For - mais indicado quando sabemos o número exato de vezes que o bloco de código deve ser executado ou quando queremos percorrer um objeto iterável.
 
-* While - faz sentido usar quando nao sabemos o número exato de vezes que o bloco de código deve ser executado.
+- While - faz sentido usar quando nao sabemos o número exato de vezes que o bloco de código deve ser executado.
 
 ## Strings e fatiamento
+
+### Interpolação de variaveis
+
+F-String
+print(f"valor de PI: {PI:.2f}")# definindo duas casas decimais
