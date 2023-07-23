@@ -19,9 +19,16 @@ Uma função pode retornar mais de um valor
 Funções também podem ser chamadas usando argumentos nomeados da forma chave:valor.
 
 ## Args e kwargs
+
 Podemos combinar parametros obrigatórios com args e kwargs.
 Quando esses são definidos (\*args e \*\*kwargs), o método recebe os valores como tupla e dicionario respectivamente.
 
 ## Parametros especiais
+
 Por padrão, argumentos podem ser passados para uma função Python tanto por posição quanto explicitamente pelo nome.
 Para uma melhor legibilidade e desempenho, faz sentido restringir a maneira pelo qual argumentos possam ser passados, assim um desenvolvedor precisa apenas olhar para a definição da função para determinar se os itens são passados por posição, por posição e nome, ou por nome.
+
+## Objetos de primeira classe
+
+Em Python tudo é objeto, dessa forma funções tambem são objetos, o que as tornam objetos de primeira classe.
+Com isso podemos atribuir funções a variáveis, passá-las como parametro para funções, usá-las como valores em estruturas de dados (listas, tuplas, dicionarios etc) e usar como valor de retorno para uma função(closures).
