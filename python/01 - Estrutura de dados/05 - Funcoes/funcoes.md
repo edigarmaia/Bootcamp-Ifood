@@ -32,3 +32,9 @@ Para uma melhor legibilidade e desempenho, faz sentido restringir a maneira pelo
 
 Em Python tudo é objeto, dessa forma funções tambem são objetos, o que as tornam objetos de primeira classe.
 Com isso podemos atribuir funções a variáveis, passá-las como parametro para funções, usá-las como valores em estruturas de dados (listas, tuplas, dicionarios etc) e usar como valor de retorno para uma função(closures).
+
+## Escopo local e escopo global
+
+Python trabalha com escopo local e global, dentro do bloco da função o escopo é local. Portanto alterações ali feitas em objetos imutáveis serão perdidas quando o método terminar de ser executado.
+Para usar objetos globais utilizamos a palavra-chave global, que informa ao interpretador que a variável que está sendo manipulada no escopo local é global.
+Essa NÃO É UMA BOA PRATICA E DEVE SER EVITADA.
