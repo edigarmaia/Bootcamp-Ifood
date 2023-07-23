@@ -93,7 +93,7 @@ print
   \*\* exponenciação
 
 Precedencia dos operadores
-1º Parentêsis
+1º Parentêses
 2º Expoentes
 3º Multiplicação e divisão, da esquerda para a direita
 4º Somas e subtrações, da esquerda para a direita
@@ -155,7 +155,9 @@ F-String
 print(f"valor de PI: {PI:.2f}")# definindo duas casas decimais
 
 ### Fatiamento de strings
+
 Técnica usada para retornar substrings (partes da string original), informando start, stop e step.
 
 ### String multiplas linhas
+
 São definidas informando 3 aspas simples ou duplas durante a atribuição, podem ocupar várias linhas do código e todos os espaços em branco são incluídos na string final.
