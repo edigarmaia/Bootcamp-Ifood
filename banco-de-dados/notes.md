@@ -79,7 +79,15 @@ Implementar diversas facilidades para os usuários
 4 - Disponibilidade de info atualizadas
 5 - Economia com escalabilidade
 
+## Modelagem de dados
+Possui foco na descrição e relacionamento dos elementos que compõem a representação do contexto (mini-mundo)
+* Conceitual -> representação gráfica
+* Físico - > parte da implementação do sistema
 
+Mini-mundo - delimita o contexto dos dados
+Alto nível - requisitos para criação do modelo
+Esquema - definido estrutura relacional, facilita a compreensão do contexto dos dados, entidade-relacionamento e UML
+SGBD - implementando, criando o BD
 
 	
 
