@@ -89,7 +89,12 @@ Alto nível - requisitos para criação do modelo
 Esquema - definido estrutura relacional, facilita a compreensão do contexto dos dados, entidade-relacionamento e UML
 SGBD - implementando, criando o BD
 
-	
+## MYSQL
+Comandos
+create database - cria o banco
+show databases - mostra os bancos
+use - entra no banco específico
+drop - deleta
 
 
 
