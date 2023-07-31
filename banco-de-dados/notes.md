@@ -96,6 +96,73 @@ show databases - mostra os bancos
 use - entra no banco específico
 drop - deleta
 
+## Arquitetura de Banco de Dados
+Abstração = essencial
+
+Classificação
+Modelo de dados físico - especialista
+Modelo de dados conceitual - visão de alto nível
+	entidade
+	atributos
+	relacionamentos
+	MER
+	generalização
+	especialização
+	
+Modelo de dados de implementação - representacional
+	constrains
+	modelo de dados relacional
+	modelos hierárquicos
+	operações
+	linguagens
+	
+## Esquemas, Instancias e Estados do BD
+Esquema - descrição, o que tem lá e de atributos e objetos e como eles interagem entre si;
+Meta dados - snapshot com toda estrutura que o banco de dados está mantendo, descrição esquema, contrutores e constrains
+
+## Arquitetura three-schema
+Características
+Catálogo
+Isolamento data/program
+Views
+
+External level
+	external/conceitual
+	mapeamento
+	
+Conceptual level
+	conceitual/interno
+	mapeamento
+Internal level
+
+Promover um isolamento de tal forma que, a modificação que ocorra em um determinado schema não influencie o schema subsequente;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
