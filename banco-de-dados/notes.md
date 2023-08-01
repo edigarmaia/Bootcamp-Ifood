@@ -155,7 +155,9 @@ any, max, avg, count, sum, min
 algebra relacional --> sgbd --> resultado da ação
 
 ## Modelagem
-Conceitual --> Lógico --> Físico
+Conceitual - o que vai ter
+Lógico - como estruturar
+Físico - como implementar
 
 
 ### Design de BDs - Projeto conceitual
