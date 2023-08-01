@@ -137,6 +137,48 @@ Internal level
 
 Promover um isolamento de tal forma que, a modificação que ocorra em um determinado schema não influencie o schema subsequente;
 
+# Introdução a modelagem de banco de dados
+
+* Mundo fechado
+			Preposição
+		Lógica formal do sistema que vai além do BD
+	Predicado
+	
+		
+## Algebra relacional
+Linguagem formal para consulta/extração de dados
+O predicado é a parte da oração que contém o verbo e que traz informações sobre o sujeito.
+Lógica de predicados
+	critério	having / where	
+any, max, avg, count, sum, min
+				 
+algebra relacional --> sgbd --> resultado da ação
+
+## Modelagem
+Conceitual --> Lógico --> Físico
+
+
+### Design de BDs - Projeto conceitual
+Linguagens de modelagem de dados - representação
+	Gráficas
+	Textuais
+
+Requisitos, perguntas a serem respondidas, visões...
+	Coleta de dados
+	Análise
+Esquema conceitual
+Modelo Entidade Relacionamento
+UML - Diagrama de Classes
+Requisitos funcionais da aplicação
+Modelo de alto nível
+
+Requisitos funcionais
+	O que executar? Quais processos?
+
+Requisitos não funcionais
+	Segurança, desempenho ...
+
+
 
 
 
