@@ -179,6 +179,27 @@ Requisitos funcionais
 
 Requisitos não funcionais
 	Segurança, desempenho ...
+	
+### Projeto lógico
+Descrição do modelo conceitual
+Organização dos dados
+Estrutura
+Esquema do banco de dados
+Criação do esquema lógico
+
+Entidade fraca, precisa de outra entidade para existir
+
+### Projeto físico
+Descrição do modelo conceitual
+Como será implementado?
+* estrutura e índices
+* organização e caminhos de arquivos
+* segurança, performance ...
+Diretamente ligado ao SGBD
+Alocação de memória
+Particionamento de tabelas
+
+
 
 
 
