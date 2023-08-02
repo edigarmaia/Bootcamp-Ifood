@@ -199,6 +199,102 @@ Diretamente ligado ao SGBD
 Alocação de memória
 Particionamento de tabelas
 
+## Modelo Entidade Relacionamento - MER
+Projeto conceitual, alto nível, dominio do negócio
+A instância é um conjunto de entidades
+Representado em um diagrama de entidade relacionamento - DER
+	Diagrama ER
+		Raras modificações
+		Facilidade de manipular
+		Esquema ER do banco de dados
+
+Notações:
+	Entidades: classes/objetos -> retangulo
+	Relacionamento: agregações -> losango
+	Atributos: propriedades elementares -> elipse conectada por uma haste
+	Entidades fracas e relacionamentos -> com linha dupla
+	Chave parcial -> linha pontilhada
+	Chave principal -> linha contínua
+	Dependência de existência -> || pipe duplo
+	Atributo derivado -> elipse pontilhada
+	Atributo composto -> várias elipses ligadas a uma central
+	
+- Tipos de entidades
+	Componente básico
+	Existencia independente
+	Atributos
+	Entidades <------------> Objetos
+
+ - Entidade fraca
+ 	Só existe se estiver relacionada a outra entidade (forte, regular)
+ 	Chave não obrigatória
+ 	Dependência
+ 	Exclusão cascata
+ 	Ex: Empregado -> dependente, o dependente só existe enquanto o empregado existir
+ 	
+ - Atributos e chaves
+   Atributos
+   	Características/descrição das entidades
+   	Atributos relacionados as instâncias
+   	
+   	Atômicos x compostos(atributos que compoem um atribuito, ex: nome (nome + sobrenome))
+   	Atributos multivalorados (tem intervalo)
+   	Armazenados (não modificam, ex: data aniversário) e derivados
+   	Atributos nulos
+   	Atributos complexos
+
+ - Relacionamentos
+	Baseado na teoria de conjuntos
+	Classificados por:
+	Grau 
+	Auto-relacional ou não 
+	Cardinalidade
+	Relacionamento como atributo
+	
+ - Constraints - cardinalidade
+ 	Cardinalidade corresponde ao nº máximo de instâncias que participam de um determinado relacionamento. Ex: 1:1, 1:N, N:1 ...
+
+
+UML - linguagem para desenvolvimento de software
+Trabalha com visões: interpretada e construída
+
+Compreensão facilitada
+Liberdade para o desenvolvedor
+Orientação à objetos
+Visão lógica
+Visão de casos de uso
+Visão de processo
+Visão de implantação
+Visão de implementação
+
+Classes(entidade)
+Orientado a objetos
+Atributos
+Operações
+Associações(relacionamento)
+
+Relacionamentos
+Associação
+Agregação
+
+Relacionamentos de alto grau
+Ternário, ..., N-nário
+Perspectiva diferente do binário
+
+
+
+
+ - Papéis e constraints
+
+
+
+ - Esquema relacional
+
+
+
+ - Diagrama ER
+
+
 
 
 
