@@ -282,26 +282,60 @@ Ternário, ..., N-nário
 Perspectiva diferente do binário
 
 
+Papéis e constraints
+Esquema relacional
+Diagrama ER
+
+## Modelo EER
+Novos conceitos semanticos
+Desenvolvimento fora da área de BDs
+Diagrama EER
+Entidade ----> Objeto
+
+A especialização está relacionada a subclasses, pois está especificando algo. Gera subclasses.
+Generalização, o inverso da especialização, propriedades comuns as entidades. Gera superclasses.
 
 
- - Papéis e constraints
+### Superclasses
+comportamento e estado gerais
 
 
-
- - Esquema relacional
-
-
-
- - Diagrama ER
-
-
+### Herança
+classe filha herda atributos e comportamentos da classe mãe
+Principio próprio à programação orientada a objetos (POO) que permite criar uma nova classe a partir de uma já existente;
+Reutilização de código
+Agregar atributos e métodos
+Especialização de classes
 
 
+### Subclasses
+Comportamento e estado específicos
+Depende do contexto do BD
+Objeto distinto no BD
 
 
+Constraints - Regras
+Deletar
+	Superclasse -> subclasse
+	
+Inserção
+	Entidade em superclasse -> predicated-defined
+	Entidade em superclasse com total -> subclasse macth
+
+### Hierarquia e rede de especialização
+Hierarquia de especialização
+Uma subclasse pode ter apenas um pai
+
+Requisitos
+Rastreamento das 3 entidades e overlaping de entidades
+Tipos definidos de empregados
+Informação dos aluminis - grau academico
+Estudantes graduandos ou não
 
 
-
+Union type
+Coleção de objetos de diferentes tipos de entidades
+Repersentação: subclasse
 
 
 
