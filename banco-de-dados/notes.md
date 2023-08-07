@@ -329,7 +329,7 @@ Uma subclasse pode ter apenas um pai
 Requisitos
 Rastreamento das 3 entidades e overlaping de entidades
 Tipos definidos de empregados
-Informação dos aluminis - grau academico
+Informação dos alunos - grau academico
 Estudantes graduandos ou não
 
 
@@ -338,6 +338,27 @@ Coleção de objetos de diferentes tipos de entidades
 Repersentação: subclasse
 
 
+## Modelo Relacional e Mapeamento ER/Relacional
+
+DDL - data definition language -> create, drop, insert, rename ...
+DML - data manipulation language -> insert, update, delete, merge
+DCL - data control language -> grant, revoke
+DQL - data query language -> select
+
+Integridade
+Como manter um estado válido?
+ * Constraints de integridade
+ * Constraints de domínio, chave, Not Null
+ Integridade de entidade
+ Integridade referencial
+
+Algoritmo de mapeamento
+ * Atributos de valor único (single-values)
+ * PK - Primary Key & Unique Key
+ * Constraint de Entidade e Referencial
+ 
+# Explorando a SQL
+## SQL Básico, DDL e DML
 
 
 
@@ -346,6 +367,11 @@ Repersentação: subclasse
 
 
 
+
+## Explorando SGBDs: MySQL e PostgreSQL
+
+
+## Desafio  
 
 
 
