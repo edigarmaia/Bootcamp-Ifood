@@ -358,27 +358,36 @@ Algoritmo de mapeamento
  * Constraint de Entidade e Referencial
  
 # Explorando a SQL
-## SQL Básico, DDL e DML
+## Tipos de dados
 
+char - tamanho fixo
+varchar - tamanh variável
+tinytext
+text
+mediumtext
+longtext
+conjunto de caracteres - show caracter set
+tinyint
+smallint
+mediumint
+int
+bigint
+float
+double
+date
+datetime
+timestamp
+year
+time
 
+## Constraint
 
-
-
-
-
-
-
-## Explorando SGBDs: MySQL e PostgreSQL
-
-
-## Desafio  
-
-
-
-
-
-
-
+Not null -> não permite valor nulo na tabela
+Pk - chave primaria
+fk - chave estrangeira
+default - valor padrão
+delete - remover um registro do banco de dados
+unique - torna unico
 
 
 
