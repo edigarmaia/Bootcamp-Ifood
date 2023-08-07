@@ -27,8 +27,19 @@ CREATE TABLE favorite_food(
 SELECT * FROM favorite_food;
 DESC person;
 
+-- Populando o banco de dados
+INSERT INTO person VALUES ('2', 'Mariana', 'Ferreira', 'F', '1979-08-21', 
+							'Rua Tal', 'Cidade B', 'SP', 'Brasil','04675-120')
+                            , ('3', 'Antonia', 'Santos', 'F', '1981-04-29', 
+							'Rua Tales', 'Cidade C', 'SP', 'Brasil','04345-180');
+SELECT * FROM person;
 
+-- DELETE from person WHERE person_id=1 or person_id=2 or person_id=3;
 
+INSERT INTO favorite_food VALUES(1, 'Lasanha'), 
+								(2, 'Feijoada'),
+                                (3, 'Mineira');                                ;
+SELECT * FROM favorite_food;
 
 
 
