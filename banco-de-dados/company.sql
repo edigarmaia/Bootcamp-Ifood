@@ -156,6 +156,18 @@ insert into works_on values (123456789, 1, 32.5),
                             (888665555, 20, 0.0);
                             
 -- Consultas SQL
-select * from employee; 
 
-                            
+select * from employee;
+-- gerente e seu departamento
+select Ssn, count(Essn) from employee e, dependent d where (e.Ssn = d.Essn);
+select * from dependent;
+
+SELECT Bdate, Address FROM employee
+WHERE Fname = 'John' AND Minit = 'B' AND Lname = 'Smith';
+
+-- recuperando dapartamento específico
+select * from departament where Dname = 'Research';
+
+SELECT Fname, Lname, Address
+FROM employee, departament
+WHERE Dname = 'Research' and Dnumber = Dno;
