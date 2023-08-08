@@ -388,11 +388,13 @@ fk - chave estrangeira
 default - valor padrão
 delete - remover um registro do banco de dados
 unique - torna unico
+distinct - retorna apenas uma ocorrência
 
 
+SELECT <lista de atributos> FROM <tabela> WHERE <condição>;
 
-
-
+DML 
+INSERT INTO <table> (<lista-atributos>) VALUES (<lista-valores>);
 
 
 
