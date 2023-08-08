@@ -171,3 +171,15 @@ select * from departament where Dname = 'Research';
 SELECT Fname, Lname, Address
 FROM employee, departament
 WHERE Dname = 'Research' and Dnumber = Dno;
+
+-- retirar a ambiguidade através di alias ou AS Statement
+select Dname, l.Dlocation as Department_name
+from departament as d, dept_locations as l
+where d.Dnumber = l.Dnumber;
+
+
+-- concatenando e fornecendo alias
+select Dname as Department, concat(Fname, ' ', Lname) as Manager from departament d, dept_locations l, employee e
+where d.Dnumber = l.Dnumber and Mgr_ssn = e.Ssn;
+
+select concat(Fname, ' ' , Lname) as Employee from employee;
