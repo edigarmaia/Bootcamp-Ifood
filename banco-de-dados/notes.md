@@ -397,6 +397,21 @@ DML
 INSERT INTO <table> (<lista-atributos>) VALUES (<lista-valores>);
 
 
+*****************************************************************
+# Explorando comandos DDL - data definition language
+update - modifica a partir de uma condição
+update <nome_tabela>
+	set coluna1 = valor1, coluna2 = valor2, ...
+	where condição;
+drop - remoção de estruturas
+drop database <nome_do_banco>;	
+
+delete - remoção de registros
+delete from <nome_tabela> where condição;
+
+alter - modificação da estrutura do banco de dados
+alter table <nome_tabela> add <nome_campo + tipo_de_dado>; 
+
 
 
 
