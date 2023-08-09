@@ -56,3 +56,20 @@ ALTER TABLE Customers DROP COLUMN Email;
 SELECT account_id, product_cd, open_date, avail_balance
 FROM account
 ORDER BY avail_balance DESC;
+
+
+-- Expressões e Alias
+select Fname, Lname, Salary, Salary*0.011 from employee;
+select Fname, Lname, Salary, Salary*0.011 as INSS from employee; -- com alias
+select Fname, Lname, Salary, round(Salary*0.011, 2) as INSS from employee; -- com casas decimais
+
+-- definir um aumento de salário para os gerentes que trabalham no projeto associado ao ProductX
+select * from employee e, works_on w, project as p
+		where (e.Ssn = w.Essn and w.Pno = p.Pnumber and Pname='ProductX');
+        
+--
+--
+--
+
+
+
