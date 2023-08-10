@@ -412,6 +412,13 @@ delete from <nome_tabela> where condição;
 alter - modificação da estrutura do banco de dados
 alter table <nome_tabela> add <nome_campo + tipo_de_dado>; 
 
+## Agrupamento de registros
+count - registros
+sum - somatório
+min - valor mínimo - atributo
+max - valor máximo - atributo
+average - media de valor - atributo
+
 
 
 
