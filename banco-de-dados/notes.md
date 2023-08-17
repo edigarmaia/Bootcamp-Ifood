@@ -472,10 +472,50 @@ AS non_tornado_precipitation
 FROM station_data
 GROUP BY year, month;
 
-                              
+
+### Multiplas tabelas com JOINs
+INNER JOIN
+* mais comum dos JOINs
+* linhas não correspondentes excluídas
+* atributo de junção
+
+SELECT <lista de atributos>
+FROM <tabela1> as alias
+INNER JOIN <tabela2> as alias2
+ON <atributos de junção "a.t = b.t">;
 
 
+SELECT e.fname, e.lname, d.name
+FROM employee e 
+INNER JOIN department d
+ON e.dept_id = d.dept_id;
 
+SELECT Fname, Lname, Address
+     FROM (employee join department on Dno = Dnumber)
+     WHERE Dname = 'Research';
+
+SELECT Dname AS Department, Dept_create_date AS StartDate, Dlocation AS Location
+      FROM department JOIN dept_locations using (Dnumber) -- using quando o atributo de junção tiver o mesmo nome nas duas tabelas
+      ORDER BY StartDate;
+
+* INNER JOIN entre 3 ou + tabelas
+SELECT * FROM employee
+     INNER JOIN works_on ON Ssn = Essn
+     INNER JOIN project ON Pno = Pnumber
+     ORDER BY Pnumber;
+
+-- project, works_on e employee     
+SELECT concat(Fname, ' ', Lname) AS Complete_name, Dno As Dept_number, Pname AS Project_name, Pno AS Project_number, Plocation As Project_location FROM employee
+     INNER JOIN works_on ON Ssn = Essn
+     INNER JOIN project ON Pno = Pnumber
+     WHERE Pname LIKE 'Product%'
+     ORDER BY Pnumber;                              
+
+-- department, dept_location, employee
+SELECT Dnumber, Dname, concat(Fname,' ',Lname) AS Manager, Salary, round(Salary*0.05,2) AS Bonus FROM department
+     INNER JOIN dept_locations using (Dnumber)
+     INNER JOIN employee ON Ssn = Mgr_ssn
+     GROUP BY Dnumber;
 
 
 
