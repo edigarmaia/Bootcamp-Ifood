@@ -517,6 +517,14 @@ SELECT Dnumber, Dname, concat(Fname,' ',Lname) AS Manager, Salary, round(Salary*
      INNER JOIN employee ON Ssn = Mgr_ssn
      GROUP BY Dnumber;
 
+### NATURAL JOIN
+* condição de junção implícita
+* atributos comuns
+
+SELECT Fname, Lname, Address
+   FROM (employee NATURAL JOIN
+        (department AS Dept (Dname, Dno, Mssn, Msdate)))
+   WHERE Dname = 'Research';
 
 
 
