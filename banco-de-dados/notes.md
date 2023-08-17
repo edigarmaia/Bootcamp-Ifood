@@ -420,6 +420,104 @@ max - valor máximo - atributo
 average - media de valor - atributo
 
 
+# Agrupando registros e tabelas com JOIN
+
+### Case statement
+* troca de um valor
+* condição para troca
+* mapeamento de valores de correspondência
+
+case { when - quando algo acontece
+	then - então faça alguma ação
+	} end
+similar ao switch case
+
+Exemplo
+UPDATE tabela_funcionario SET salario = 
+	CASE
+	   WHEN depto = 5 THEN salario + 2000
+      	   WHEN depto = 4 THEN salario + 1500
+     	   ELSE salario + 0
+	END; 
+
+### Agrupamento com CASE
+SELECT year,
+CASE
+WHEN wind_speed >= 40 THEN 'high'
+WHEN wind_speed >= 30 THEN 'moderate'
+ELSE 'low'
+END as wind_severity,
+COUNT(*) as record_count
+FROM station_data
+GROUP BY 1,2;
+
+### Caso zero/null trick
+* filtros - valores distintos
+* select query
+
+Exemplo SEM O CASE
+SELECT year, month,
+SUM(precipitation) AS tornado_precipitation
+FROM station_data
+WHERE tornado = 1
+GROUP BY year, month;
+
+
+Exemplo COM O CASE
+SELECT year, month,
+SUM(CASE WHEN tornado = 1 THEN precipitation ELSE 0 END)
+AS tornado_pecipitation,
+SUM(CASE WHEN tornado = 0 THEN precipitation ELSE 0 END)
+AS non_tornado_precipitation
+FROM station_data
+GROUP BY year, month;
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
