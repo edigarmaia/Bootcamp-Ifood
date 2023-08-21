@@ -13,6 +13,7 @@ create table clients(
     Address varchar(30),
     constraint unique_cpf_client unique (cPf)
 );
+desc clients;
 -- tabela produto
 create table product(
 	idProduct int auto_increment primary key,
@@ -33,6 +34,7 @@ create table orders(
     constraint fk_ordes_client foreign key (idorderClient) references clients(idClient)
 			on update cascade
 );
+desc orders;
 -- tabela pagamentos
 create table payments(
 	idclient int,
@@ -57,7 +59,7 @@ create table supplier(
     contact char(11) not null,
     constraint unique_supplier unique (CNPJ)
 );
-
+desc supplier;
 -- tabela vendedor
 create table seller(
 	idSeller int auto_increment primary key,
@@ -74,11 +76,33 @@ create table seller(
 -- tabela produto vendedor
 create table productSeller(
 	idPseller int,
-    idProduct int,
-    Quantity int default 1,
-    primary key (idPseller, idProduct),
-    constraint fk_product_seller foreign key (idPseller) references seller(idPseller),
-    constraint fk_product_product foreign key (idProduct) references product(idProduct)
+    idPproduct int,
+    prodQuantity int default 1,
+    primary key (idPseller, idPproduct),
+    constraint fk_product_seller foreign key (idPseller) references seller(idSeller),
+    constraint fk_product_product foreign key (idPproduct) references product(idProduct)
+);
+
+
+-- tabela produto pedido
+create table productOrder(
+	idPOproduct int,
+    idPOorder int,
+    poQuantity int default 1,
+    poStatus enum('Disponível', 'Sem estoque') default 'Disponível',
+    primary key (idPOproduct, idPOorder),
+    constraint fk_productorder_product foreign key (idPOproduct) references product(idProduct),
+    constraint fk_productorder_order foreign key (idPOorder) references orders(idOrder)
+
+);
+
+create table storageLocation(
+	idLproduct int,
+    idLstorage int,
+    location varchar(255) not null,
+    primary key (idLproduct, idLstorage),
+    constraint fk_storage_location_product foreign key (idLproduct) references product(idProduct),
+    constraint fk_storage_location_storage foreign key (idLstorage) references productStorage(idProdStorage)
 );
 
 
