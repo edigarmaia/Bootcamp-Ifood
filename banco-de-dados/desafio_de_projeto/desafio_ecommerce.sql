@@ -54,8 +54,34 @@ create table supplier(
 	idSupplier int auto_increment primary key,
     SocialName varchar(255) not null,
     CNPJ char(15) not null,
-    contact char(11) not null
+    contact char(11) not null,
+    constraint unique_supplier unique (CNPJ)
 );
+
+-- tabela vendedor
+create table seller(
+	idSeller int auto_increment primary key,
+    SocialName varchar(255) not null,
+    AbstName varchar(255),
+    CNPJ char(15),
+    CPF char(9),
+    location varchar(255),
+    contact char(11) not null,
+    constraint unique_cnpj_seller unique (CNPJ),
+    constraint unique_spf_seller unique (CPF)
+);
+
+-- tabela produto vendedor
+create table productSeller(
+	idPseller int,
+    idProduct int,
+    Quantity int default 1,
+    primary key (idPseller, idProduct),
+    constraint fk_product_seller foreign key (idPseller) references seller(idPseller),
+    constraint fk_product_product foreign key (idProduct) references product(idProduct)
+);
+
+
 
 
 
