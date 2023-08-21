@@ -11,38 +11,51 @@ create table clients(
     Lname varchar(20),
     CPF char(11) not null,
     Address varchar(30),
-    constraint unique_cpf_client unique (CPF)
+    constraint unique_cpf_client unique (cPf)
 );
 -- tabela produto
 create table product(
 	idProduct int auto_increment primary key,
     Pname varchar(10) not null,
     classification_kids bool default false,
-    category enum('Eletrônico', 'Vestimenta', 'Brinquedos', 'Alimentos', 'Móveis') not null,
+    category enum('eletrônico', 'Vestimenta', 'Brinquedos', 'Alimentos', 'Móveis') not null,
     assessment float default 0,
     size varchar(10)
 );
 -- tabela pedido
 create table orders(
-	idOrder int auto_increment primary key,
-	idOrderClient int,
-	orderStatus enum('Cancelado', 'Confirmado', 'Em processamento') not null,
+	idorder int auto_increment primary key,
+	idorderClient int,
+	orderStatus enum('cancelado', 'Confirmado', 'Em processamento') default 'em processamento',
     orderDescription varchar(255),
     sendValue float default 10,
     paymentCash boolean default false, 
-    constraint fk_ordes_client foreign key (idOrderClient) references clients(idClient)
+    constraint fk_ordes_client foreign key (idorderClient) references clients(idClient)
 			on update cascade
 );
 -- tabela pagamentos
 create table payments(
 	idclient int,
     idPayment int,
-    typePayment enum('Boleto','Cartão','Dois cartões'),
+    typePayment enum('boleto','Cartão','Dois cartões'),
     limitAvailable float,
     primary key(idClient, idPayment)
 );
 
+-- tabela estoque
+create table productStorage(
+	idProdStorage int auto_increment primary key,
+	storageLocation varchar(255),
+    quantity int default 0
+);
 
+-- tabela fornecedor
+create table supplier(
+	idSupplier int auto_increment primary key,
+    SocialName varchar(255) not null,
+    CNPJ char(15) not null,
+    contact char(11) not null
+);
 
 
 
