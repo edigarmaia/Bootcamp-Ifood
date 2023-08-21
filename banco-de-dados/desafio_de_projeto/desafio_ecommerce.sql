@@ -105,6 +105,21 @@ create table storageLocation(
     constraint fk_storage_location_storage foreign key (idLstorage) references productStorage(idProdStorage)
 );
 
+-- tabela produto fornecedor
+
+create table productSupplier(
+	idPsSupplier int,
+    idPsProduct int,
+    quantity int not null,
+    primary key (idPsSupplier, idPsProduct),
+    constraint fk_product_supplier_supplier foreign key (idPsSupplier) references supplier(idSupplier),
+    constraint fk_product_supplier_prodcut foreign key (idPsProduct) references product(idProduct)
+);
+
+desc productSupplier;
+
+
+show tables;
 
 
 
