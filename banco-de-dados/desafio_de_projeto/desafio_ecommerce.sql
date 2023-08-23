@@ -241,4 +241,3 @@ select * from clients c inner join orders o ON c.idClient = o.idOrderClient
 select c.idClient, Fname, count(*) as Number_of_orders from clients c 
 				inner join orders o ON c.idClient = o.idOrderClient
 		group by idClient; 
-e
