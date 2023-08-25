@@ -49,7 +49,7 @@ df.isnull().sum() -> verifica quantos dados altantes existem em nosso conjunto.
 df['setor'].unique -> verifica quais os valores únicos existem na coluna.
 
 
-## Biblioteca Scikit-lear
+## Biblioteca Scikit-learning
 Uma das principais na área de inteligência artificial, foi desenvolvida sobre os pacotes NumPy, SciPy e matpplotilib.
 
 
@@ -58,8 +58,30 @@ Uma das principais na área de inteligência artificial, foi desenvolvida sobre 
 Framework de execução criado pelo Spotfy que cria pipilines de dados em python
 
 
+# Introdução ao Machine Learning
+Treinar o sistema
+Aprende com exemplos
+Tomada de decisão com suporte de base de regras bem definidas, sem se basear na emoção
+
+IA Geral - filmes, ficção científica
+
+IA Restrita - sistemas para reconhecimento de face, compras, veículos autonomos, sensores de radar, cameras de vídeo, acelerômetros
+	Aprendizado por reforço, com recompensas
+	Redes neurais artificiais
+	
+	
+Aprendizado de Máquina - treinamento, programar computadores para aprender um determinado comportamento ou padrão automaticamente a partir de exemplos ou observações, utilizando *datasets*
+
+Teste de Turing - testa a capacidade de uma máquina exibir comportamento inteligente equivalente a um ser humano, ou indistinguível deste.
+
+Robo Sophia
+Primeiro robô a ter cidadania
+Capaz de reproduzir 62 expressões faciais
+Objetivo é conseguir uma maior aceitação da robótica no mesmo ambiente humano
+Ainda não consegue passar no teste de Turing
 
 
+TensorFlow - framework gratuito para machine learning
 
 
 
