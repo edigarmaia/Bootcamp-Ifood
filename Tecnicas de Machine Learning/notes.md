@@ -84,11 +84,15 @@ Ainda não consegue passar no teste de Turing
 TensorFlow - framework gratuito para machine learning
 
 
+# Métodos de Machine Learning bioinspirados
 
+Algoritmos bioinspirados
+	* Inspirados no comportamehnto de seres vivos em convivencia social;
+	* Conhecimento colaborativo compartilhado;
+	* Métodos heurísticos (não determinísticos);
+	* Buscam a melhor solução global;
 
-
-
-
+	
 
 
 
