@@ -93,10 +93,15 @@ Algoritmos bioinspirados
 	* Buscam a melhor solução global;
 
 	
+# Redes Neurais Artificiais
+Sinais de entrada
+Pesos sinápticos
+Combinador linear
+Limiar de ativação
+Sinal de saída(resposta)
 
-
-
-
+Nossos olhos são sensores que capturam uma imagem por meio da visão e jogam a imagem para o cérebro;
+Um treinamento é gerado por valores numéricos, pesos;
 
 
 
